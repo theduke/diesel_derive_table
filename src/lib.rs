@@ -258,8 +258,6 @@ pub fn table(input: TokenStream) -> TokenStream {
     // Build the impl
     let gen = impl_table(&ast);
 
-    println!("{:#?}", gen);
-
     // Return the generated impl
     gen.parse().unwrap()
 }
