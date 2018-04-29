@@ -25,7 +25,8 @@ the table! macro for diesel.
 #[table_name="reddit_posts"]
 #[primary_key(uuid)]
 pub struct RedditPost {
-    #[column_type="Text", column_name="my_uuid"]
+    #[column_type="Text"]
+    #[column_name="my_uuid"]
     pub uuid: String,
     #[column_type="BigInt"]
     pub created_at: i64,
